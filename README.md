@@ -106,3 +106,16 @@ You may be [given a warning](https://bitbucket.org/adamschmideg/coffeescript-ecl
   [xtext_download]: http://www.eclipse.org/Xtext/download.html
   [csep_bitbucket_download]: https://bitbucket.org/adamschmideg/coffeescript-eclipse/downloads
   [csep_github]: https://github.com/adamschmideg/coffeescript-eclipse 
+
+
+# Building
+
+If you want to contribute to the plugin, here's a quick overview how to setup and build it locally:
+
+1. Install [http://www.eclipse.org/Xtext/download.html](Xtext) / Version 2.1.x
+2. Clone this repository
+3. Import all projects into your workspace
+4. Right click `csep/src/csep/CoffeeScript.xtext/CoffeeScript.xtext` -> Run as ... -> Generate Xtext language artifacts
+5. Right click `example/csep.example.cake/src/csep/example/cake/Cakefile.xtext` -> Run as .. -> Generate Xtext language artifacts
+
+After these 5 steps, the project should build without errors and you can startup a new eclipse instance and open any .coffee file using the coffeescript editor.

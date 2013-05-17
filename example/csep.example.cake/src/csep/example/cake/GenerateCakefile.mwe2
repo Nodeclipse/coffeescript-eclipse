@@ -14,7 +14,7 @@ Workflow {
         scanClassPath = true
         platformUri = "${runtimeProject}/.."    
         //registerGenModelFile = "platform:/resource/org.eclipse.xtext.xbase/model/Xbase.genmodel"
-        registerGenModelFile = "platform:/resource/csep/csep/CoffeeScript.genmodel"
+        registerGenModelFile = "platform:/resource/csep/src-gen/csep/CoffeeScript.genmodel"
     }
 
     component = DirectoryCleaner {
