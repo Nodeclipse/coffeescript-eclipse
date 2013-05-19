@@ -110,6 +110,8 @@ You may be [given a warning](https://bitbucket.org/adamschmideg/coffeescript-ecl
 
 # Building
 
+## Building in eclipse
+
 If you want to contribute to the plugin, here's a quick overview how to setup and build it locally:
 
 1. Install [http://www.eclipse.org/Xtext/download.html](Xtext) / Version 2.1.x
@@ -119,3 +121,8 @@ If you want to contribute to the plugin, here's a quick overview how to setup an
 5. Right click `example/csep.example.cake/src/csep/example/cake/Cakefile.xtext` -> Run as .. -> Generate Xtext language artifacts
 
 After these 5 steps, the project should build without errors and you can startup a new eclipse instance and open any .coffee file using the coffeescript editor.
+
+## Building with Maven / Tycho
+
+To start a headless build using maven, simply run `mvn` in the root of the project. 
+
