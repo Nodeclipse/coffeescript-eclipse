@@ -30,7 +30,7 @@ public class CoffeeScriptFactoryImpl extends EFactoryImpl implements CoffeeScrip
   {
     try
     {
-      CoffeeScriptFactory theCoffeeScriptFactory = (CoffeeScriptFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.coffeescript.org/eclipse"); 
+      CoffeeScriptFactory theCoffeeScriptFactory = (CoffeeScriptFactory)EPackage.Registry.INSTANCE.getEFactory(CoffeeScriptPackage.eNS_URI);
       if (theCoffeeScriptFactory != null)
       {
         return theCoffeeScriptFactory;

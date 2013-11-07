@@ -37,7 +37,7 @@ public class Showcase extends ParserTestBase {
     _builder.append("quote  = \"A picture is a fact. -- #{ author }\"");
     _builder.newLine();
     _builder.newLine();
-    _builder.append("sentence = \"#{ 22 / 7 } is a decent approximation of \uFFFD\uFFFD\"");
+    _builder.append("sentence = \"#{ 22 / 7 } is a decent approximation of \ufffd\ufffd\"");
     _builder.newLine();
     this.ok(_builder);
   }

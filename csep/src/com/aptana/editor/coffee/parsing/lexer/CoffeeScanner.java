@@ -359,8 +359,7 @@ public class CoffeeScanner extends Scanner {
 			code = "\n" + code;
 			this.fOffsetCorrection -= 1;
 		}
-		code = code.replaceAll("\r", "").replaceFirst(
-				TRAILING_SPACES.pattern(), "");
+		code = code.replaceAll("\r", "");
 		this.fCode = code;
 		this.fLine = 0;
 		if (opts.containsKey("fLine")) {
@@ -891,7 +890,7 @@ public class CoffeeScanner extends Scanner {
 			if (noNewlines) {
 				this.suppressNewlines();
 			} else {
-				this.newlineToken();
+				this.newlineToken(indent.length());
 			}
 			return indent.length();
 		}
@@ -969,9 +968,9 @@ public class CoffeeScanner extends Scanner {
 		return 0;
 	}
 
-	private void newlineToken() {
+	private void newlineToken(int i) {
 		if (this.tag() != Terminals.TERMINATOR) {
-			this.token(Terminals.TERMINATOR, "\n", 1);
+			this.token(Terminals.TERMINATOR, "\n", i);
 		}
 		// return this;
 	}
