@@ -20,6 +20,8 @@ import java.util.Stack;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.lang.StringUtils;
+
 import beaver.Scanner;
 
 import com.aptana.editor.coffee.parsing.Terminals;
@@ -970,7 +972,7 @@ public class CoffeeScanner extends Scanner {
 
 	private void newlineToken(int i) {
 		if (this.tag() != Terminals.TERMINATOR) {
-			this.token(Terminals.TERMINATOR, "\n", i);
+			this.token(Terminals.TERMINATOR, StringUtils.leftPad("", i, "\n"), i);
 		}
 		// return this;
 	}
