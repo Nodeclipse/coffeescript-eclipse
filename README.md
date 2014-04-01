@@ -108,7 +108,8 @@ For Eclipse version before Kepler there is [quick installer on Marketplace](http
 <a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1097343" title="Drag and drop into a running Eclipse to install Nodeclipse CoffeeScript Editor">
   <img src="http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/installbutton.png"/>
 </a>
-or update site `http://www.nodeclipse.org/coffeescript/repository/`
+or update site `http://www.nodeclipse.org/coffeescript/repository/` (for 0.3)
+`http://dl.bintray.com/nodeclipse/CoffeeScriptEditor/0.4.0-201403250304/` (for 0.4)
 
  Below is original detailed instructions:
  
